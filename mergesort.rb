@@ -1,13 +1,14 @@
-class Mergesort # Mezclamos todo
+# Mezclamos todo
+class Mergesort
   def initialize
   end
 
-  def self.hayquedividir?(array)
+  def hayquedividir?(array)
     return true if array.length > 1
   end
 
-  def self.ordenar(array)
-    if hayquedividir?(array)
+  def ordenar(array)
+    if self.hayquedividir?(array)
       mitad_array = ((array.length) / 2)
       arrayizq = ordenar(array.take(mitad_array))
       arraydrch = ordenar(array.drop(mitad_array))
@@ -17,7 +18,7 @@ class Mergesort # Mezclamos todo
     end
   end
 
-  def self.mezclar(arrayizq, arraydrch)
+  def mezclar(arrayizq, arraydrch)
     if arrayizq.empty?
       arraydrch
     elsif arraydrch.empty?
