@@ -9,11 +9,11 @@ class TestMergesort < Test::Unit::TestCase
     assert_equal(true, Mergesort.new.hayquedividir?([1, 2, 3, 4]))
   end
 
-  def test_ordenar_num_facil
+  def test_ordenar_array_par
     assert_equal([1, 2, 3, 4], Mergesort.new.ordenar([4, 3, 1, 2]))
   end
 
-  def test_ordenar_num_dificil
+  def test_ordenar_array_impar
     assert_equal([1, 3, 4, 7, 9], Mergesort.new.ordenar([9, 4, 3, 7, 1]))
   end
 
