@@ -1,12 +1,14 @@
 {
   "Unit Tests": {
     "coverage": {
-      "C:/Users/juancarlos.cavero/Desktop/Mergesort/mergesort.rb": [
+      "C:/Users/juancarlos.cavero/Desktop/Mergesort2/mergesort.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
         1,
         43,
-        19,
-        null,
-        null,
         null,
         null,
         1,
@@ -30,9 +32,10 @@
         null,
         21,
         null,
+        null,
         null
       ]
     },
-    "timestamp": 1434093154
+    "timestamp": 1434097665
   }
 }

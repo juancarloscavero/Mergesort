@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Mergesort</title>
+    <title>Code coverage for Mergesort2</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.0/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-12T09:12:34+02:00">2015-06-12T09:12:34+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-12T10:27:45+02:00">2015-06-12T10:27:45+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         20.2
+         18.2
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>1</b> files in total.
-    <b>18</b> relevant lines. 
-    <span class="green"><b>18</b> lines covered</span> and
+    <b>19</b> relevant lines. 
+    <span class="green"><b>19</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,13 +51,13 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#d53f72ba9556dea220b9471e8511bc746cf996f4" class="src_link" title="mergesort.rb">mergesort.rb</a></td>
+        <td class="strong"><a href="#5bc5c3860c5c4f494f1b7938e01c248430611cf6" class="src_link" title="mergesort.rb">mergesort.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>29</td>
-        <td>18</td>
-        <td>18</td>
+        <td>32</td>
+        <td>19</td>
+        <td>19</td>
         <td>0</td>
-        <td>20.2</td>
+        <td>18.2</td>
       </tr>
       
     </tbody>
@@ -76,13 +76,13 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="d53f72ba9556dea220b9471e8511bc746cf996f4">
+        <div class="source_table" id="5bc5c3860c5c4f494f1b7938e01c248430611cf6">
   <div class="header">
     <h3>mergesort.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>18</b> lines covered</span> and
+      <b>19</b> relevant lines. 
+      <span class="green"><b>19</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -93,175 +93,193 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">def hayquedividir?(array)</code>
+          <code class="ruby">class Mergesort #Mezclar de todo</code>
         </li>
       
-        <li class="covered" data-hits="43" data-linenumber="2">
-          <span class="hits">43</span>
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
           
-          <code class="ruby">		if array.length &gt; 1</code>
+          <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="3">
-          <span class="hits">19</span>
+        <li class="never" data-hits="" data-linenumber="3">
           
-          <code class="ruby">			return true</code>
+          
+          <code class="ruby"> </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby">		end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">def mergesort(array)</code>
+          <code class="ruby">  def self.hayquedividir?(array)</code>
         </li>
       
-        <li class="covered" data-hits="42" data-linenumber="9">
-          <span class="hits">42</span>
+        <li class="covered" data-hits="43" data-linenumber="7">
+          <span class="hits">43</span>
           
-          <code class="ruby">	if hayquedividir?(array)</code>
+          <code class="ruby">    return true if array.length &gt; 1</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="10">
-          <span class="hits">18</span>
-          
-          <code class="ruby">		medio= ((array.length) /2)</code>
-        </li>
-      
-        <li class="covered" data-hits="18" data-linenumber="11">
-          <span class="hits">18</span>
-          
-          <code class="ruby">		arrayizq = mergesort(array.take(medio))</code>
-        </li>
-      
-        <li class="covered" data-hits="18" data-linenumber="12">
-          <span class="hits">18</span>
-          
-          <code class="ruby">		arraydrch = mergesort(array.drop(medio))</code>
-        </li>
-      
-        <li class="covered" data-hits="18" data-linenumber="13">
-          <span class="hits">18</span>
-          
-          <code class="ruby">		mezclar(arrayizq,arraydrch)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="14">
-          
-          
-          <code class="ruby">	else</code>
-        </li>
-      
-        <li class="covered" data-hits="24" data-linenumber="15">
-          <span class="hits">24</span>
-          
-          <code class="ruby">		array</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
-          
-          <code class="ruby">def mezclar(arrayizq,arraydrch)</code>
-        </li>
-      
-        <li class="covered" data-hits="46" data-linenumber="20">
-          <span class="hits">46</span>
-          
-          <code class="ruby"> if arrayizq.empty?</code>
-        </li>
-      
-        <li class="covered" data-hits="6" data-linenumber="21">
-          <span class="hits">6</span>
-          
-          <code class="ruby">     arraydrch</code>
-        </li>
-      
-        <li class="covered" data-hits="40" data-linenumber="22">
-          <span class="hits">40</span>
-          
-          <code class="ruby">   elsif arraydrch.empty?</code>
-        </li>
-      
-        <li class="covered" data-hits="12" data-linenumber="23">
-          <span class="hits">12</span>
-          
-          <code class="ruby">     arrayizq</code>
-        </li>
-      
-        <li class="covered" data-hits="28" data-linenumber="24">
-          <span class="hits">28</span>
-          
-          <code class="ruby">  elsif arrayizq.first &lt; arraydrch.first</code>
-        </li>
-      
-        <li class="covered" data-hits="7" data-linenumber="25">
-          <span class="hits">7</span>
-          
-          <code class="ruby">    [arrayizq.first] + mezclar(arrayizq[1..arrayizq.length], arraydrch)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">  else</code>
-        </li>
-      
-        <li class="covered" data-hits="21" data-linenumber="27">
-          <span class="hits">21</span>
-          
-          <code class="ruby">    [arraydrch.first] + mezclar(arrayizq, arraydrch[1..arraydrch.length])</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">end	</code>
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.ordenar(array)</code>
+        </li>
+      
+        <li class="covered" data-hits="42" data-linenumber="11">
+          <span class="hits">42</span>
+          
+          <code class="ruby">    if hayquedividir?(array)</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="12">
+          <span class="hits">18</span>
+          
+          <code class="ruby">      mitad_array = ((array.length) / 2)</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="13">
+          <span class="hits">18</span>
+          
+          <code class="ruby">      arrayizq = ordenar(array.take(mitad_array))</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="14">
+          <span class="hits">18</span>
+          
+          <code class="ruby">      arraydrch = ordenar(array.drop(mitad_array))</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="15">
+          <span class="hits">18</span>
+          
+          <code class="ruby">      mezclar(arrayizq, arraydrch)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="24" data-linenumber="17">
+          <span class="hits">24</span>
+          
+          <code class="ruby">      array</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def self.mezclar(arrayizq, arraydrch)</code>
+        </li>
+      
+        <li class="covered" data-hits="46" data-linenumber="22">
+          <span class="hits">46</span>
+          
+          <code class="ruby">    if arrayizq.empty?</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="23">
+          <span class="hits">6</span>
+          
+          <code class="ruby">      arraydrch</code>
+        </li>
+      
+        <li class="covered" data-hits="40" data-linenumber="24">
+          <span class="hits">40</span>
+          
+          <code class="ruby">    elsif arraydrch.empty?</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="25">
+          <span class="hits">12</span>
+          
+          <code class="ruby">      arrayizq</code>
+        </li>
+      
+        <li class="covered" data-hits="28" data-linenumber="26">
+          <span class="hits">28</span>
+          
+          <code class="ruby">    elsif arrayizq.first &lt; arraydrch.first</code>
+        </li>
+      
+        <li class="covered" data-hits="7" data-linenumber="27">
+          <span class="hits">7</span>
+          
+          <code class="ruby">      [arrayizq.first] + mezclar(arrayizq[1..arrayizq.length], arraydrch)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="21" data-linenumber="29">
+          <span class="hits">21</span>
+          
+          <code class="ruby">      [arraydrch.first] + mezclar(arrayizq, arraydrch[1..arraydrch.length])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>
