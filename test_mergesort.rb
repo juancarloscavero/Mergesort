@@ -32,4 +32,8 @@ class TestMergesort < Test::Unit::TestCase
   def test_mayusculas
     assert_equal(%w(A B C a b c), Mergesort.new.ordenar(%w(a c b C A B)))
   end
+
+  def test_nums_iguales
+    assert_equal([1, 1, 2, 2, 3], Mergesort.new.ordenar([1, 2, 3, 2, 1]))
+  end
 end
