@@ -3,8 +3,8 @@ SimpleCov.start
 
 require 'test/unit'
 require_relative 'mergesort'
-
-class Test_mergesort < Test::Unit::TestCase #Testeamos nuestro mergesort
+# Testeamos nuestro mergesort
+class Test_mergesort < Test::Unit::TestCase
   def test_hayquedividir?
     assert_equal(true, Mergesort.hayquedividir?([1, 2, 3, 4]))
   end

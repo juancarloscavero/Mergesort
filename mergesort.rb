@@ -1,6 +1,5 @@
-class Mergesort #Mezclar de todo
+class Mergesort # Mezclamos todo
   def initialize
- 
   end
 
   def self.hayquedividir?(array)
