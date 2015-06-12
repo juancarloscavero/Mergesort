@@ -1,0 +1,38 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "C:/Users/juancarlos.cavero/Desktop/Mergesort/mergesort.rb": [
+        1,
+        43,
+        19,
+        null,
+        null,
+        null,
+        null,
+        1,
+        42,
+        18,
+        18,
+        18,
+        18,
+        null,
+        24,
+        null,
+        null,
+        null,
+        1,
+        46,
+        6,
+        40,
+        12,
+        28,
+        7,
+        null,
+        21,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1434093154
+  }
+}

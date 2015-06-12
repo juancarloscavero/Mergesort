@@ -1,8 +1,6 @@
 def hayquedividir?(array)
 		if array.length > 1
 			return true
-		else
-			return false
 		end
 end
 
@@ -19,10 +17,10 @@ def mergesort(array)
 end
 
 def mezclar(arrayizq,arraydrch)
-if arrayizq.empty?
-    arraydrch
-  elsif arraydrch.empty?
-    arrayizq
+ if arrayizq.empty?
+     arraydrch
+   elsif arraydrch.empty?
+     arrayizq
   elsif arrayizq.first < arraydrch.first
     [arrayizq.first] + mezclar(arrayizq[1..arrayizq.length], arraydrch)
   else

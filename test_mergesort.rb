@@ -1,5 +1,9 @@
+require 'simplecov'
+SimpleCov.start
+
 require 'test/unit'
-require_relative 'Mergesort'
+require_relative 'mergesort'
+
 
 class Test_mergesort < Test::Unit::TestCase
 
@@ -9,7 +13,7 @@ class Test_mergesort < Test::Unit::TestCase
 	end
 
 	def test_ordenar_num_facil	
-		assert_equal([1,2,3,4,5], mergesort([5,4,3,1,2]) )		
+		assert_equal([1,2,3,4], mergesort([4,3,1,2]) )		
 	end
 
 	def test_ordenar_num_dificil
@@ -21,6 +25,13 @@ class Test_mergesort < Test::Unit::TestCase
 	end
 	def test_ordenar_floats
 		assert_equal([2.0, 3.0, 7.2], mergesort([3.0, 7.2, 2.0]))
+	end
+	def test_caracteres_especiales
+		assert_equal(['#','*','/'], mergesort(['/','*','#']))
+	end
+	def test_mayusculas
+		assert_equal(["A","B","C","a", "b", "c"], mergesort(["a","c","b","C","A","B"]) )
+		
 	end
 
 end
