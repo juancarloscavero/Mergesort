@@ -8,7 +8,7 @@ class Mergesort
   end
 
   def ordenar(array)
-    if self.hayquedividir?(array)
+    if hayquedividir?(array)
       mitad_array = ((array.length) / 2)
       arrayizq = ordenar(array.take(mitad_array))
       arraydrch = ordenar(array.drop(mitad_array))
